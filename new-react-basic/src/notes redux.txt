@@ -1,0 +1,36 @@
+Pada dasarnya peran Redux dalam sebuah aplikasi adalah melakukan perubahan state
+ yang dibutuhkan oleh setiap fungsional pada aplikasi. 
+Untuk melakukan perubahaan itu terdapat tiga komponen utama dari aplikasi Redux, yaitu action, reducer, store. 
+
+action :  action adalah orang yang memberikan perintah untuk melakukan suatu pekerjaan
+ dan memberikan hal-hal yang diberikan untuk dapat menunjang pekerjaan itu.
+
+reducer : Setelah action memberikan perintah dan memberikan hal-hal yang dibutuhkan, 
+maka selanjutnya menjadi bagian reducer untuk mengubah atau menjalankan perintah yang diberikan.
+
+store : 
+1. Menyimpan state aplikasi;
+2. Mendapatkan akses ke dalam state, menggunakan store.getState();
+3. Dapat melakukan perubahan state menggunakan store.dispatch();
+4. Mendapatkan listener menggunakan store.subscribe(listener);
+5. Menangani listener yang belum teregistrasi dari balikan nilai dari store.subscribe(listener)
+
+npm install redux
+npm install @reduxjs/toolkit
+npm install react-redux
+
+
+
+
+
+
+
+
+
+
+buat sebuah store folder redux
+buat user.js untuk menyimpan init state kita
+init state disini gunanya untuk login
+
+buat store.js 
+

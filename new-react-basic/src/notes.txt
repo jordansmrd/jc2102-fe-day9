@@ -1,0 +1,36 @@
+database = tempat penyimpanan data
+tidak sembarang orang dapat mengatur data yang kita miliki
+
+API (application programming interface) = perantara aplikasi dengan aplikasi lain
+contohnya memanipulasi data yang ada di database
+
+package untuk fakeapi 
+npm install axios json-server
+
+directory ke fake-api kita
+command 
+npx json-server db.json -p 2000
+
+-p adalah sebuah flag yang merujuk kepada sebuah port
+jadi disini kita memberikan sebuah port untuk api kita
+
+bisa filter id dengan menggunakan root params pada broswer
+contoh localhost:2000/todos/1 
+apa bila mau filter selain id bisa menggunakan query params
+localhost:2000/todos?status=true
+lebih dari 1?
+localhost:2000/todos?status=true&date=06-08-2022
+
+request vs response
+
+request = permintaan/panggilan kepada sebuah server. server apa? disini json-server 
+contoh request = localhost:2000/todos?status=true
+pada api ada bermacam-macam request 
+- GET = READ
+- POST = Create
+- PUT/PATCH = update
+- delete = delete
+
+response = hasil/jawaban dari sebuah server. 
+contoh hasilnya adalah output yg ditunjukan pada broswer
+

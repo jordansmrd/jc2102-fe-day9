@@ -1,0 +1,107 @@
+{
+  "todos": [
+    {
+      "tgl": "2022-06-06",
+      "action": "makan sabun",
+      "status": false,
+      "id": 10
+    },
+    {
+      "tgl": "2022-06-10",
+      "action": "belajar",
+      "status": false,
+      "id": 11
+    },
+    {
+      "tgl": "2022-06-10",
+      "action": "makan sabun",
+      "status": false,
+      "id": 12
+    },
+    {
+      "tgl": "2022-06-15",
+      "action": "test",
+      "status": false,
+      "id": 13
+    },
+    {
+      "tgl": "2022-06-15",
+      "action": "test",
+      "status": false,
+      "id": 14
+    }
+  ],
+  "bandmember": [
+    {
+      "id": 1,
+      "name": "udin",
+      "Instrument": "Guitar",
+      "datebirth": "21 Januari 1996",
+      "hobby": "Bowling"
+    },
+    {
+      "id": 2,
+      "name": "jason",
+      "Instrument": "suling",
+      "datebirth": "11 desember 1996",
+      "hobby": "Bowling"
+    },
+    {
+      "id": 3,
+      "name": "fakri",
+      "Instrument": "gendang",
+      "datebirth": "20 maret 1996",
+      "hobby": "Bowling"
+    }
+  ],
+  "products" : [
+    {
+        "id":1,
+        "productName": "Apel",
+        "price": 6000,
+        "category" : "Fruit"
+    },
+    {
+        "id":2,
+        "productName": "Pisang",
+        "price": 8000,
+        "category" : "Fruit"
+    },
+    {
+        "id":3,
+        "productName": "Pir",
+        "price": 7000,
+        "category" : "Fruit"
+    },
+    {
+        "id":4,
+        "productName": "Anggur",
+        "price": 6500,
+        "category" : "Fruit"
+    },
+    {
+        "id":5,
+        "productName": "Jeruk",
+        "price": 4500,
+        "category" : "Fruit"
+    },
+    {
+        "id":6,
+        "productName": "Lengkeng",
+        "price": 5000,
+        "category" : "Fruit"
+    }
+  ], 
+  "user_accounts" : [
+    {
+      "id" : 1,
+      "username": "kuda",
+      "password": "password123"
+    },
+    {
+      "id" : 2,
+      "username": "udin",
+      "password": "password123"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+* {
+  font-family: Lato, sans-serif;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 45px;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+nav a {
+  font-size: 15px;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.link-wrapper {
+  display: flex;
+}
+
+.jumbotron {
+  position: relative;
+}
+
+.jumbotron img {
+  width: 100%;
+}
+
+.band-caption {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  color: white;
+  text-align: center;
+}
+
+.band-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.band-member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+}
+
+.band-member-card img {
+  width: 100%;
+}
+
+.band-photos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
