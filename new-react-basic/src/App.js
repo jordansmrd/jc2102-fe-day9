@@ -1,6 +1,6 @@
 import "./assets/styles.css";
 import Navbar from "./components/Navbar/Navbar";
-import { useState, React } from "react";
+import { useState, React, useEffect } from "react";
 
 import Home from "./pages/Home";
 
@@ -14,7 +14,22 @@ import BandMember from "./pages/BandMember";
 import ProductPage from "./pages/ProductPage";
 import LoginPage from "./pages/LoginPage";
 import CounterPage from "./pages/CounterPage";
+import { useDispatch } from "react-redux";
+import user_types from "./redux/reducers/user/types";
 function App() {
+  const dispatch = useDispatch();
+
+  const savedDataUser = localStorage.getItem("user_data");
+
+  if (savedDataUser) {
+    const parseDataUser = JSON.parse(savedDataUser);
+
+    dispatch({
+      type: user_types.USER_LOGIN,
+      payload: parseDataUser,
+    });
+  }
+
   return (
     <>
       <BrowserRouter>

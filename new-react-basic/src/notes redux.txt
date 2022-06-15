@@ -1,6 +1,7 @@
 Pada dasarnya peran Redux dalam sebuah aplikasi adalah melakukan perubahan state
  yang dibutuhkan oleh setiap fungsional pada aplikasi. 
-Untuk melakukan perubahaan itu terdapat tiga komponen utama dari aplikasi Redux, yaitu action, reducer, store. 
+Untuk melakukan perubahaan itu terdapat tiga komponen utama dari aplikasi Redux, yaitu 
+action, reducer, store. 
 
 action :  action adalah orang yang memberikan perintah untuk melakukan suatu pekerjaan
  dan memberikan hal-hal yang diberikan untuk dapat menunjang pekerjaan itu.

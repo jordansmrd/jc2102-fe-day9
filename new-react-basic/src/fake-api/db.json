@@ -96,12 +96,16 @@
     {
       "id" : 1,
       "username": "kuda",
-      "password": "password123"
+      "password": "password123",
+      "email" : "kuda@mail.com",
+      "role" : "user"
     },
     {
       "id" : 2,
       "username": "udin",
-      "password": "password123"
+      "password": "password123",
+      "email" : "udin@mail.com",
+      "role" : "admin"
     }
   ]
 }

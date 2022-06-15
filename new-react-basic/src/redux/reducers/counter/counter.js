@@ -5,6 +5,9 @@ const init_state = {
 };
 
 function counterReducer(state = init_state, action) {
+  //action adalah sebuah perintah
+  //reducer adalah yang menjalankan perintah
+  //store adalah kumpulan reducer
   //action untuk increment
   if (action.type === counter_types.INCREMENT_COUNTER) {
     return {
@@ -17,6 +20,11 @@ function counterReducer(state = init_state, action) {
     return {
       ...state,
       count: state.count - 1,
+    };
+  } else if (action.type === "load") {
+    return {
+      ...state,
+      count: action.payload.count,
     };
   }
   return state;

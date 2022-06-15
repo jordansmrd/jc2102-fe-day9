@@ -2,6 +2,7 @@ import { FormLabel, Center, Box, Text, Input, Button, Flex } from "@chakra-ui/re
 import { useState } from "react";
 import { useSelector , useDispatch } from "react-redux";
 import { axiosInstance } from "../configs/api";
+import user_types from "../redux/reducers/user/types";
 
 
 function LoginPage() {
@@ -10,6 +11,7 @@ function LoginPage() {
     const [inputPassword, SetInputPassword] = useState("");
 
     const userSelector = useSelector((state) => state.auth)
+    const  dispatch = useDispatch();
 
 
     function inputHandler(event, field) {
@@ -30,12 +32,21 @@ function LoginPage() {
     }).then((res)=>{
         if(res.data[0] !== undefined)
         {
-            SetUserData(res.data[0])
+            // SetUserData(res.data[0])
+            const userData = res.data[0]
+            dispatch({
+                type: user_types.USER_LOGIN,
+                payload: userData
+            })
+
+            localStorage.setItem("user_data", JSON.stringify(userData))
         }
         else
         {
             alert("username/password salah")
         }
+       
+
     }).catch((err) => {
         console.log(err)
         alert("Terjadi kesalahan pada server")
