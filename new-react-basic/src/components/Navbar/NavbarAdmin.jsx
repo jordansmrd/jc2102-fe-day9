@@ -2,7 +2,9 @@ import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { Button } from 'reactstrap';
 import user_types from '../../redux/reducers/user/types';
-function Navbar() {
+
+
+function NavbarAdmin() {
 const userSelector = useSelector((state) => state.auth)
 const dispatch = useDispatch();
 
@@ -19,8 +21,12 @@ function btnlogout() {
     <nav>
       <div className="link-wrapper">
        <Link to="/"> Home</Link> 
+       <Link to="/band"> Band</Link> 
+       <Link to="/products"> Product</Link>        
+      
       </div>
     
+
       <div className="link-wrapper"> 
         {userSelector.id
         ? 
@@ -38,9 +44,13 @@ function btnlogout() {
         </Link>
       )}
       </div>
+    
+     
+
+     
     </nav>
     
   )
 }
 
-export default Navbar;
+export default NavbarAdmin;

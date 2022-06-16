@@ -4,11 +4,14 @@ import { Navigate } from "react-router-dom"
 
 
 function BandPage() {
-    const userSelector = useSelector((state) => state.auth)
-    if(userSelector.role !== "admin")
-    {
-        return <Navigate to="/"></Navigate>
-    }
+
+    // const userSelector = useSelector((state) => state.auth)
+
+    // if(userSelector?.role !== "admin")
+    // {
+    // return <Navigate to="/" />
+    // }
+
     return (
         <BandSection/>
     )
